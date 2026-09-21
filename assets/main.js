@@ -45,6 +45,29 @@
     });
   }
 
+  /* --- Contact form ---------------------------------------------------
+     There is no form backend, so the submit is turned into a prefilled
+     mail draft rather than a POST that would 404. Replace this whole
+     block once a real endpoint exists. */
+  var form = document.getElementById("contact-form");
+
+  if (form) {
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      var data = new FormData(form);
+      var name = (data.get("name") || "").trim();
+      var from = (data.get("email") || "").trim();
+      var body = (data.get("message") || "").trim() + "\n\n--\n" + name + "\n" + from;
+
+      window.location.href =
+        "mailto:srimotrix.india@gmail.com?subject=" +
+        encodeURIComponent("Project enquiry from " + name) +
+        "&body=" +
+        encodeURIComponent(body);
+    });
+  }
+
   /* --- Footer year ---------------------------------------------------- */
   var year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();

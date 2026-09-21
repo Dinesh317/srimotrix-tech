@@ -655,8 +655,12 @@
           </div>
 
           <div>
-            <!-- Swap action for your Formspree / Basin / Web3Forms endpoint. See README. -->
-            <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <!-- No form backend yet, so main.js turns the submit into a prefilled
+                 mail draft. The mailto action below is the scripting-off path.
+                 To move to a real backend, set action to your Formspree / Basin /
+                 Web3Forms endpoint, restore method="POST", drop enctype, and
+                 delete the submit handler in main.js. -->
+            <form class="form" id="contact-form" action="mailto:srimotrix.india@gmail.com" method="POST" enctype="text/plain">
               <div class="field-grid">
                 <div class="field">
                   <label for="name">Name</label>
