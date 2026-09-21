@@ -1,4 +1,4 @@
-/* SRIMOTRIX Tech â€” progressive enhancement only.
+/* SRIMOTRIX Tech — progressive enhancement only.
    The page is fully readable and navigable with this file blocked. */
 (function () {
   "use strict";
@@ -8,7 +8,7 @@
   /* --- Theme toggle ---------------------------------------------------
      The stored choice is applied by the inline script in <head> so there
      is no flash. With no stored choice, CSS follows the OS setting, which
-     is why this button starts hidden â€” it only appears once we know it
+     is why this button starts hidden — it only appears once we know it
      can actually do something. */
   var toggle = document.getElementById("theme-toggle");
   var query = window.matchMedia("(prefers-color-scheme: dark)");
@@ -34,7 +34,7 @@
       try {
         localStorage.setItem("theme", next);
       } catch (e) {
-        /* private mode â€” the choice just will not persist */
+        /* private mode — the choice just will not persist */
       }
       describe();
     });

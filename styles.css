@@ -1,5 +1,5 @@
 /* ============================================================
-   SRIMOTRIX Tech â€” one-page site
+   SRIMOTRIX Tech — one-page site
    Plain CSS. Mobile-first. No build step, no framework.
 
    1  Tokens + themes      6  Hero
@@ -25,7 +25,7 @@
   --d-field: #727272;
   --d-veil: rgb(10 10 10 / 0.82);
 
-  /* Active palette â€” light unless a rule below reassigns it */
+  /* Active palette — light unless a rule below reassigns it */
   --paper: #fff;
   --wash: #fafafa;
   --ink: #0a0a0a;
@@ -282,7 +282,7 @@ p {
   font-weight: 500;
 }
 
-/* Header â€” mobile: two static rows, so the nav needs no toggle state. */
+/* Header — mobile: two static rows, so the nav needs no toggle state. */
 .site-header {
   border-bottom: 1px solid var(--line);
   background: var(--paper);
@@ -546,8 +546,7 @@ p {
 }
 
 /* Outrunner: the outer bell carrying the magnets turns; the stator stays
-   fixed. This is the drone-propulsion topology â€” the propeller bolts to
-   the bell, so the rotating mass is on the outside. */
+   fixed, so the rotating mass sits on the outside. */
 .rotor__spin {
   transform-origin: 200px 200px;
   animation: spin 44s linear infinite;
@@ -806,7 +805,7 @@ p {
   color: var(--muted);
 }
 
-/* Spec table â€” reads like a datasheet */
+/* Spec table — reads like a datasheet */
 .envelope {
   margin-top: 1.15rem;
   border-top: 1px solid var(--line);
@@ -909,7 +908,7 @@ p {
   gap: 1.5rem;
 }
 
-/* Direct children only â€” a descendant selector here also caught the second
+/* Direct children only — a descendant selector here also caught the second
    field inside .field-grid and pushed Email 2rem below Name. */
 .form > .field {
   margin-top: 2rem;
