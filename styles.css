@@ -860,6 +860,12 @@ p {
   color: var(--ink);
 }
 
+/* <address> defaults to italic in every browser */
+.postal {
+  font-style: normal;
+  margin-bottom: 0.6rem;
+}
+
 /* Icon-only links. The accessible name lives in aria-label on the anchor and the
    glyph is aria-hidden, so nothing here is announced as "link, link, link". */
 .social {
